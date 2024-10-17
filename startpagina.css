@@ -8,6 +8,30 @@ body {
     color: var(--text-color);
 }
 
+.achtergrond2 {
+    display: none;
+}
+
+h1 {
+    z-index: 999;
+    position: absolute;
+    top: 25%; /* Plaatst de tekst verticaal in het midden */
+    left: 10%;
+    font-size: 64px;
+}
+
+img {
+    margin-left:0;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+    height: 100vh; /* Volledige hoogte van het scherm */
+}
+
 a:focus-visible {
     outline: 1px solid blue;      
 }
@@ -29,4 +53,15 @@ a:hover {
     color: #22A5F9;
     transform: translateZ(1px) scale(1.03); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+}
+
+/* Media-query voor kleinere schermen */
+@media (min-width: 392px)  {
+    .achtergrond2 {
+    display: flex;
+}
+
+.achtergrond1 {
+    display: none;
+}
 }
