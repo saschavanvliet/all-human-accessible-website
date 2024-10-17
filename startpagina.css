@@ -1,7 +1,32 @@
 :root {
-color: green;
+    --primary-color: black;
+    --text-color: white;
 }
 
-h1 {
-    color: var(color);
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+a:focus-visible {
+    outline: 1px solid blue;      
+}
+
+a {
+    align-items: center;
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border-radius: 37.5px;
+    border: solid white 1px;
+    text-decoration: none;
+    padding: 1em;
+    display: inline-flex;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #22A5F9;
+    transform: translateZ(1px) scale(1.03); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
